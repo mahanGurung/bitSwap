@@ -1,0 +1,25 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://stacks-node-api.testnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: sip-010-trait-ft-standard
+            expected-sender: ST3WQF1D4SZVC2J47ST4M7BYKQ7E8WFVDKSZT20KF
+            cost: 870
+            path: contracts/sip-010-trait-ft-standard.clar
+            anchor-block-only: true
+            clarity-version: 1
+        - contract-publish:
+            contract-name: bit-swap
+            expected-sender: ST3WQF1D4SZVC2J47ST4M7BYKQ7E8WFVDKSZT20KF
+            cost: 13010
+            path: contracts/bitSwap.clar
+            anchor-block-only: true
+            clarity-version: 1
+      epoch: "2.05"
