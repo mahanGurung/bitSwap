@@ -7,7 +7,7 @@
 
 ;; Import token traits to ensure proper token handling
 
-(use-trait ft-trait 'ST1NXBK3K5YYMD6FD41MVNP3JS1GABZ8TRVX023PT.sip-010-trait-ft-standard.sip-010-trait)
+(use-trait ft-trait .sip-010-trait-ft-standard.sip-010-trait)
 ;; (use-trait amm-trait .amm-trait)
 
 
