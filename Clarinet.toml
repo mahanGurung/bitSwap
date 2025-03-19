@@ -8,6 +8,10 @@ telemetry = true
 contract_id = "ST1NXBK3K5YYMD6FD41MVNP3JS1GABZ8TRVX023PT.sip-010-trait-ft-standard"
 [contracts.bit-swap]
 path = "contracts/bitSwap.clar"
+depends_on = ["sip-010-trait-ft-standard"]
+
+[contracts.sip-010-trait-ft-standard]
+path = "contracts/sip-010-trait-ft-standard.clar"
 depends_on = []
 
 [repl]
