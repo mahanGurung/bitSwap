@@ -10,15 +10,15 @@ plan:
       transactions:
         - contract-publish:
             contract-name: sip-010-trait-ft-standard
-            expected-sender: ST1YQ2WG7FAMRS6CEZVVH0D0R1Q35CDE2TT75V4FR
+            expected-sender: ST1WSK1Y8Q369PKZYHPFDN84H9ZYRXNHE13KV9Q5B
             cost: 870
             path: contracts/sip-010-trait-ft-standard.clar
             anchor-block-only: true
             clarity-version: 1
         - contract-publish:
             contract-name: bit-swap
-            expected-sender: ST1YQ2WG7FAMRS6CEZVVH0D0R1Q35CDE2TT75V4FR
-            cost: 13010
+            expected-sender: ST1WSK1Y8Q369PKZYHPFDN84H9ZYRXNHE13KV9Q5B
+            cost: 12371
             path: contracts/bitSwap.clar
             anchor-block-only: true
             clarity-version: 1
