@@ -88,7 +88,7 @@
 
 ;; Transfer tokens using ft-transfer trait - returns true on success
 (define-private (transfer-token (token-contract <ft-trait>) (amount uint) (sender principal) (recipient principal))
-  (let ((transfer-result (contract-call? token-contract transfer amount sender recipient none)))
+  (let ((transfer-result (as-contract (contract-call? token-contract transfer amount sender recipient none))))
     (is-ok transfer-result))) 
 
 ;; Validate basic inputs and reserves
